@@ -10,18 +10,18 @@ const whatsappUrl = 'https://wa.me/5566999573381?text=Ol%C3%A1%2C%20Studio%20Mar
 const instagramUrl = 'https://www.instagram.com/studiomarcelionogueira/';
 const tiktokUrl = 'https://www.tiktok.com/@studiomarcelionogueira';
 const mapsUrl = 'https://www.google.com/maps/search/?api=1&query=Rua+dos+Cedros+503+Jardim+Botânico+Sinop+MT';
-const logoPhoto = '/photos/logo.jpg';
+const logoPhoto = './photos/logo.jpg';
 
 const portfolio = [
-  { image: '/photos/6762.jpg', label: 'Morena iluminada', note: 'luz natural · movimento' },
-  { image: '/photos/6761.jpg', label: 'Alisamentos', note: 'brilho · alinhamento' },
-  { image: '/photos/6765.jpg', label: 'Mechas', note: 'cor · dimensão' },
-  { image: '/photos/6766.jpg', label: 'Cortes', note: 'forma · personalidade' },
-  { image: '/photos/6767.jpg', label: 'Mãos', note: 'manicure · detalhe' },
-  { image: '/photos/6770.jpg', label: 'Mãos', note: 'cor · acabamento' },
-  { image: '/photos/6763.jpg', label: 'Morena iluminada', note: 'brilho · textura' },
-  { image: '/photos/6768.jpg', label: 'Mãos', note: 'cor · cuidado' },
-  { image: '/photos/6769.jpg', label: 'Mãos', note: 'acabamento · cor' },
+  { image: './photos/6762.jpg', label: 'Morena iluminada', note: 'luz natural · movimento' },
+  { image: './photos/6761.jpg', label: 'Alisamentos', note: 'brilho · alinhamento' },
+  { image: './photos/6765.jpg', label: 'Mechas', note: 'cor · dimensão' },
+  { image: './photos/6766.jpg', label: 'Cortes', note: 'forma · personalidade' },
+  { image: './photos/6767.jpg', label: 'Mãos', note: 'manicure · detalhe' },
+  { image: './photos/6770.jpg', label: 'Mãos', note: 'cor · acabamento' },
+  { image: './photos/6763.jpg', label: 'Morena iluminada', note: 'brilho · textura' },
+  { image: './photos/6768.jpg', label: 'Mãos', note: 'cor · cuidado' },
+  { image: './photos/6769.jpg', label: 'Mãos', note: 'acabamento · cor' },
 ];
 
 const services = [
@@ -103,7 +103,7 @@ function InteractivePhoto() {
       <div className="hero-photo-orbit orbit-one" aria-hidden="true" />
       <div className="hero-photo-orbit orbit-two" aria-hidden="true" />
       <div className="hero-photo-frame">
-        <img ref={photoRef} className="hero-photo" src="/photos/6762.jpg" alt="Resultado de morena iluminada realizado pelo Studio Marcelio Nogueira" draggable="false" />
+        <img ref={photoRef} className="hero-photo" src="./photos/6762.jpg" alt="Resultado de morena iluminada realizado pelo Studio Marcelio Nogueira" draggable="false" />
       </div>
       <div className="photo-tip"><span className="drag-dot" /> toque e arraste</div>
     </div>
@@ -180,7 +180,7 @@ function App() {
 
         <section id="studio" className="studio-section section-pad section-gold">
           <div className="studio-copy reveal"><p className="eyebrow">sobre o studio</p><h2>Seu tempo<br /><em>bem cuidado.</em></h2><p>O Studio Marcelio Nogueira é um espaço para desacelerar, conversar e sair se sentindo ainda mais você. Técnica e acolhimento caminham juntos em cada atendimento.</p><a className="button button-dark" href={whatsappUrl} target="_blank" rel="noreferrer">marcar meu horário <ArrowIcon /></a></div>
-          <div className="studio-strip reveal"><img src="/photos/6767.jpg" alt="Detalhe de manicure do Studio Marcelio Nogueira" /><img src="/photos/6764.jpg" alt="Resultado de mechas do Studio Marcelio Nogueira" /><img src="/photos/6771.jpg" alt="Detalhe de manicure do Studio Marcelio Nogueira" /></div>
+          <div className="studio-strip reveal"><img src="./photos/6767.jpg" alt="Detalhe de manicure do Studio Marcelio Nogueira" /><img src="./photos/6764.jpg" alt="Resultado de mechas do Studio Marcelio Nogueira" /><img src="./photos/6771.jpg" alt="Detalhe de manicure do Studio Marcelio Nogueira" /></div>
         </section>
 
         <section className="visit-section section-pad"><div className="visit-copy reveal"><p className="eyebrow">vem de perto</p><h2>A gente<br /><em>te espera.</em></h2><p>Rua dos Cedros, nº 503<br />Jardim Botânico · Sinop, MT</p><a className="button button-dark" href={mapsUrl} target="_blank" rel="noreferrer">abrir localização <ArrowIcon /></a></div><div className="visit-info reveal"><div><span>horários</span><p>segunda a sábado<br />08h — 18h</p></div><div><span>conversa</span><p>Agende pelo WhatsApp<br />ou acompanhe no Instagram.</p></div><div className="social-links"><a href={instagramUrl} target="_blank" rel="noreferrer">Instagram <ArrowIcon /></a><a href={tiktokUrl} target="_blank" rel="noreferrer">TikTok <ArrowIcon /></a></div></div></section>
