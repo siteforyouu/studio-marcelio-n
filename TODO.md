@@ -1,22 +1,25 @@
 # Entregas
 
-## Página vitrine responsiva
-- [x] A página inicial apresenta o conceito “Cada detalhe importa”, uma chamada principal e uma apresentação marcante da ótica.
-- [x] A experiência é adaptada a celulares, tablets e desktops, com navegação acessível e bom desempenho.
-- [x] O layout foi auditado em 320px, 360px, 375px e 390px; textos, botões, cards, seções e rodapé permanecem dentro da viewport sem overflow horizontal.
-- [x] Containers com largura fixa, paddings móveis inadequados e elementos posicionados fora da tela foram ajustados sem alterar a direção editorial original.
+## Identidade e conteúdo
+- [x] O site foi adaptado para o Studio Marcelio Nogueira, salão de beleza em Sinop.
+- [x] O logo enviado foi recortado e aplicado no header, no rodapé e na seção institucional.
+- [x] Instagram e TikTok foram conectados aos perfis do Studio.
+- [x] Endereço, horários, serviços e chamada de agendamento foram incorporados a partir das informações fornecidas e verificadas.
 
-## Experiência 3D e animações
-- [x] A imagem enviada `IMG_6757.JPG` é usada no lugar do óculos desenhado no hero.
-- [x] A própria foto responde a cursor e arraste com rotação suave em GSAP, sem criar um novo modelo de óculos.
-- [x] Animações de entrada, rolagem e microinterações usam GSAP de forma contida.
+## Fotos e galeria
+- [x] As capturas de tela enviadas foram recortadas para remover interface, textos e botões do Instagram.
+- [x] As fotos de alisamentos, morena iluminada, mechas, cortes e manicure foram usadas na galeria, no hero e na seção institucional.
+- [x] As imagens foram convertidas para JPG otimizado e mantidas em `public/photos` sem alterar os arquivos originais enviados.
+- [x] A galeria usa layout editorial assimétrico no desktop e grid proporcional no mobile.
 
-## Vitrine e informações
-- [x] A vitrine visual apresenta armações e coleções sem preços, seleção de produtos ou compra online.
-- [x] A seção de serviços orienta o cliente antes do atendimento.
-- [x] A apresentação institucional comunica o cuidado e os diferenciais da Thamy Thamy Ótica.
-- [x] As informações da loja incluem endereço, horários e dados essenciais.
+## Animações GSAP
+- [x] O hero usa entrada em sequência, parallax durante a rolagem e uma foto interativa com movimento de cursor e arraste.
+- [x] A faixa de especialidades possui movimento horizontal contido.
+- [x] As seções e cards aparecem com revelação progressiva durante a rolagem.
+- [x] Órbitas decorativas e imagens da galeria usam movimentos suaves e respeitam `prefers-reduced-motion`.
 
-## Contato e visita
-- [x] Há ações de contato em destaque para WhatsApp e acesso ao Instagram.
-- [x] A localização tem endereço e link direto para abrir a rota no mapa.
+## Responsividade e acessibilidade
+- [x] O layout foi revisado em 320px e 390px, com cards, títulos, botões e imagens dentro da viewport.
+- [x] O site evita larguras fixas desnecessárias, usa grids com `minmax(0, 1fr)` e não depende de overflow horizontal global.
+- [x] Imagens possuem textos alternativos, links externos usam `rel="noreferrer"` e a navegação mantém HTML semântico.
+- [x] O build de produção foi validado sem erros de TypeScript.
