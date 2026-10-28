@@ -8,6 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const whatsappUrl = 'https://wa.me/5511999999999?text=Ol%C3%A1%2C%20Thamy%20Thamy%20%C3%93tica!';
 const mapsUrl = 'https://www.google.com/maps/search/?api=1&query=Thamy+Thamy+Ótica';
+const glassesPhoto = '/manus-storage/IMG_6757_443e1419.JPG';
 
 const collections = [
   { number: '01', name: 'Essenciais', detail: 'Linhas limpas para todos os dias', tone: 'sand', shape: 'round' },
@@ -111,17 +112,10 @@ function GlassesModel() {
       role="img"
       aria-label="Óculos em 3D interativo. Arraste para explorar."
     >
-      <div className="glasses-aura" />
-      <div className="glasses-shadow" />
-      <div ref={modelRef} className="glasses-model">
-        <div className="temple temple-left" />
-        <div className="temple temple-right" />
-        <div className="lens-frame lens-left"><div className="lens-glow" /></div>
-        <div className="lens-frame lens-right"><div className="lens-glow" /></div>
-        <div className="bridge" />
-        <div className="nose-pad nose-left" />
-        <div className="nose-pad nose-right" />
-        <div className="logo-mark">TT</div>
+      <div className="glasses-aura" aria-hidden="true" />
+      <div className="glasses-shadow" aria-hidden="true" />
+      <div ref={modelRef} className="glasses-model glasses-photo-model">
+        <img className="glasses-photo" src={glassesPhoto} alt="Óculos inteligentes em vista explodida, com lentes, câmera e componentes internos destacados" draggable="false" />
       </div>
       <div className="drag-hint"><span className="drag-dot" /> arraste para explorar</div>
     </div>

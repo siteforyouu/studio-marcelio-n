@@ -3,9 +3,12 @@
 ## Página vitrine responsiva
 - [x] A página inicial apresenta o conceito “Cada detalhe importa”, uma chamada principal e uma apresentação marcante da ótica.
 - [x] A experiência é adaptada a celulares, tablets e desktops, com navegação acessível e bom desempenho.
+- [x] O layout foi auditado em 320px, 360px, 375px e 390px; textos, botões, cards, seções e rodapé permanecem dentro da viewport sem overflow horizontal.
+- [x] Containers com largura fixa, paddings móveis inadequados e elementos posicionados fora da tela foram ajustados sem alterar a direção editorial original.
 
 ## Experiência 3D e animações
-- [x] O óculos em 3D tem movimento suave e responde a arraste ou cursor sem depender de imagens pesadas.
+- [x] A imagem enviada `IMG_6757.JPG` é usada no lugar do óculos desenhado no hero.
+- [x] A própria foto responde a cursor e arraste com rotação suave em GSAP, sem criar um novo modelo de óculos.
 - [x] Animações de entrada, rolagem e microinterações usam GSAP de forma contida.
 
 ## Vitrine e informações
